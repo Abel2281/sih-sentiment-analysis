@@ -1,0 +1,102 @@
+[
+    {
+        "clause_id": "Section 1",
+        "title": "Short title, extent and commencement",
+        "summary": "This section establishes the official name of the Act as 'The Digital Personal Data Protection Act, 2023' and specifies its applicability across the whole of India. It also outlines that different provisions of the Act may come into force on different dates as notified by the Central Government."
+    },
+    {
+        "clause_id": "Section 2",
+        "title": "Definitions",
+        "summary": "This crucial section defines key terms used throughout the Act, such as 'Data Principal' (the individual to whom the data relates), 'Data Fiduciary' (the entity determining the purpose and means of processing personal data), 'Personal Data', 'Processing', 'Consent', and 'Data Protection Board'. Understanding these definitions is fundamental to interpreting the Act's provisions and obligations."
+    },
+    {
+        "clause_id": "Section 3",
+        "title": "Application of Act",
+        "summary": "This section delineates the scope of the Act, stating it applies to the processing of digital personal data within India, where such data is collected online or offline and subsequently digitized. It also extends to processing outside India if it involves offering goods or services to Data Principals in India or profiling them."
+    },
+    {
+        "clause_id": "Section 4",
+        "title": "Grounds for processing of personal data",
+        "summary": "This section establishes the lawful bases for processing personal data, primarily requiring the consent of the Data Principal for a specified purpose. It also introduces the concept of 'deemed consent' for certain legitimate uses where explicit consent is not required."
+    },
+    {
+        "clause_id": "Section 5",
+        "title": "Notice",
+        "summary": "This section mandates that a Data Fiduciary must provide a Data Principal with a notice outlining the personal data to be processed and the purpose of such processing. This ensures transparency and allows the Data Principal to make an informed decision regarding their consent."
+    },
+    {
+        "clause_id": "Section 6",
+        "title": "Consent",
+        "summary": "This section details the requirements for valid consent, specifying that it must be free, specific, informed, unconditional, and unambiguous, with a clear affirmative action. It also grants Data Principals the right to withdraw their consent at any time, with consequences for such withdrawal."
+    },
+    {
+        "clause_id": "Section 7",
+        "title": "Deemed consent",
+        "summary": "This section outlines specific situations where consent is considered 'deemed' without explicit action from the Data Principal, such as for the performance of a legal obligation, medical emergencies, or employment purposes. These provisions aim to balance individual privacy rights with legitimate operational needs and public interest."
+    },
+    {
+        "clause_id": "Section 8",
+        "title": "Obligations of Data Fiduciary",
+        "summary": "This section imposes several key obligations on Data Fiduciaries, including making reasonable efforts to ensure the accuracy and completeness of personal data, implementing reasonable security safeguards to prevent data breaches, and erasing personal data once the purpose of processing is no longer served. It also mandates notifying the Data Protection Board and affected Data Principals in the event of a personal data breach."
+    },
+    {
+        "clause_id": "Section 9",
+        "title": "Additional obligations of Significant Data Fiduciary",
+        "summary": "This section imposes enhanced obligations on 'Significant Data Fiduciaries' (entities designated based on factors like volume and sensitivity of data, risk to Data Principals, and potential impact on India's sovereignty). These additional duties include appointing a Data Protection Officer, conducting Data Protection Impact Assessments, and undertaking periodic audits."
+    },
+    {
+        "clause_id": "Section 10",
+        "title": "Obligations of Data Fiduciary in relation to children",
+        "summary": "This section provides special protections for the personal data of children, requiring verifiable parental consent before processing a child's data. It prohibits processing data that is likely to cause harm to a child and bans tracking, behavioral monitoring, or targeted advertising directed at children."
+    },
+    {
+        "clause_id": "Section 11",
+        "title": "Rights of Data Principal",
+        "summary": "This section enumerates the fundamental rights of a Data Principal, including the right to access information about their personal data, the right to correction and erasure of their data, and the right to grievance redressal. It empowers individuals to have greater control over their personal information."
+    },
+    {
+        "clause_id": "Section 12",
+        "title": "Right to grievance redressal",
+        "summary": "This section specifically grants Data Principals the right to register a grievance with a Data Fiduciary regarding any act or omission related to their personal data. It mandates that Data Fiduciaries establish an accessible mechanism for grievance redressal and respond within a prescribed timeframe."
+    },
+    {
+        "clause_id": "Section 14",
+        "title": "Duties of Data Principal",
+        "summary": "This section outlines the responsibilities of Data Principals, such as adhering to the provisions of the Act, not registering false or frivolous grievances, and providing accurate information when exercising their rights. It balances individual rights with corresponding duties to ensure responsible data ecosystem participation."
+    },
+    {
+        "clause_id": "Section 15",
+        "title": "Data Protection Board of India",
+        "summary": "This section provides for the establishment of the Data Protection Board of India as an independent body responsible for enforcing the provisions of the Act. The Board is tasked with adjudicating disputes, imposing penalties, and ensuring compliance with data protection principles."
+    },
+    {
+        "clause_id": "Section 17",
+        "title": "Functions of Board",
+        "summary": "This section details the wide-ranging functions of the Data Protection Board, including inquiring into data breaches, directing Data Fiduciaries to take necessary measures, and imposing penalties for non-compliance. It empowers the Board to act as the primary regulatory and enforcement authority under the Act."
+    },
+    {
+        "clause_id": "Section 19",
+        "title": "Power of Board to impose penalty",
+        "summary": "This section grants the Data Protection Board the authority to impose monetary penalties on Data Fiduciaries or Data Principals for contraventions of the Act. The Board considers factors like the nature, gravity, and duration of the contravention, as well as the type of personal data involved, when determining the penalty amount."
+    },
+    {
+        "clause_id": "Section 23",
+        "title": "Penalties",
+        "summary": "This section specifies the maximum monetary penalties for various contraventions of the Act, such as failure to take reasonable security safeguards to prevent a personal data breach (up to Rs. 250 crore) or failure to fulfill obligations in relation to children's data (up to Rs. 200 crore). These penalties underscore the serious consequences of non-compliance for Data Fiduciaries."
+    },
+    {
+        "clause_id": "Section 24",
+        "title": "Exemptions",
+        "summary": "This section outlines specific circumstances under which certain provisions of the Act may not apply, or may apply with modifications, to ensure flexibility for government agencies and other entities. Exemptions include processing for national security, public order, prevention of cognizable offenses, and research purposes, subject to prescribed safeguards."
+    },
+    {
+        "clause_id": "Section 25",
+        "title": "Power to make rules",
+        "summary": "This section empowers the Central Government to make rules for carrying out the provisions of the Act, allowing for the detailed implementation of its principles. These rules can cover aspects like the manner of obtaining consent, security safeguards, and the functioning of the Data Protection Board."
+    },
+    {
+        "clause_id": "Section 27",
+        "title": "Repeal and savings",
+        "summary": "This section repeals Section 43A of the Information Technology Act, 2000, and the rules made thereunder, which previously dealt with compensation for data breaches. It clarifies that any action taken under the repealed provisions will continue to be valid, ensuring a smooth transition to the new data protection regime."
+    }
+]
