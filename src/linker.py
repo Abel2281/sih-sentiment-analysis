@@ -8,7 +8,7 @@ linker_model = SentenceTransformer('all-MiniLM-L6-v2')
 print("Linker Model Loaded!")
 
 def load_law_context():
-    path = os.path.join("data", "processed", "laws_json", "current_law_context.json")
+    path = os.path.join("data", "processed", "law_context.json")
     if not os.path.exists(path):
         print(f"Error: Law file not found at {path}")
         return None
