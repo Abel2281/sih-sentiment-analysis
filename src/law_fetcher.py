@@ -17,26 +17,23 @@ def fetch_law_summary(law: str):
     print(f"Fetching summary for law: {law}")
 
     prompt = f"""
-    I need a structured summary of the law: "{law}".
+    I need a structured database of the "Sections" of the law: "{law}".
     
-    Please provide a response strictly in valid JSON format. 
-    Do not add markdown formatting like ```json ... ```. Just the raw JSON string.
-    
-    The JSON should be a list of objects, where each object represents a key clause/section.
-    Structure:
+    Rules:
+    1. EXTRACT the actual Section Numbers (e.g., "Section 3", "Section 17").
+    2. Provide the specific Title of that section.
+    3. For the summary, provide a detailed 2-sentence explanation of what that specific section governs.
+    4. Focus on the Top 20 most important sections (including Penalties, User Rights, Exemptions, and Data Fiduciary obligations).
+    5. Output strictly as a JSON list of objects.
+
+    Output Format:
     [
-        {{
-            "clause_id": "Section 1",
-            "title": "Short Title",
-            "simple_summary": "One sentence explanation for a layman."
-        }},
-        {{
-            "clause_id": "Section 2",
-            ...
-        }}
+      {{
+        "clause_id": "Section X",
+        "title": "Official Title of Section",
+        "summary": "Detailed explanation of this section's rules..."
+      }}
     ]
-    
-    Focus on the 5-10 most important or controversial sections of this law.
     """
 
     try:
@@ -45,7 +42,7 @@ def fetch_law_summary(law: str):
             contents=prompt,
             config=types.GenerateContentConfig(
                 temperature=0.2,
-                max_output_tokens=4000,
+                max_output_tokens=8192,
                 response_mime_type="application/json"
             )
         )
