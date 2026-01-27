@@ -2,9 +2,11 @@ from google import genai
 from google.genai import types
 import os
 import json
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv("../.env") 
+env_path = Path(__file__).parent.parent / ".env"
+load_dotenv(env_path) 
 api_key = os.getenv("GENAI_API_KEY")
 if not api_key:
     raise ValueError("GENAI_API_KEY not found! Check your .env file.")
