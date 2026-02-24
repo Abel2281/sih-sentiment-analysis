@@ -1,102 +1,102 @@
 [
     {
-        "clause_id": "Section 1",
-        "title": "Short title, extent and commencement",
-        "summary": "This section establishes the official name of the Act as 'The Digital Personal Data Protection Act, 2023' and specifies its applicability across the whole of India. It also outlines that different provisions of the Act may come into force on different dates as notified by the Central Government."
-    },
-    {
-        "clause_id": "Section 2",
-        "title": "Definitions",
-        "summary": "This crucial section defines key terms used throughout the Act, such as 'Data Principal' (the individual to whom the data relates), 'Data Fiduciary' (the entity determining the purpose and means of processing personal data), 'Personal Data', 'Processing', 'Consent', and 'Data Protection Board'. Understanding these definitions is fundamental to interpreting the Act's provisions and obligations."
-    },
-    {
         "clause_id": "Section 3",
-        "title": "Application of Act",
-        "summary": "This section delineates the scope of the Act, stating it applies to the processing of digital personal data within India, where such data is collected online or offline and subsequently digitized. It also extends to processing outside India if it involves offering goods or services to Data Principals in India or profiling them."
-    },
-    {
-        "clause_id": "Section 4",
-        "title": "Grounds for processing of personal data",
-        "summary": "This section establishes the lawful bases for processing personal data, primarily requiring the consent of the Data Principal for a specified purpose. It also introduces the concept of 'deemed consent' for certain legitimate uses where explicit consent is not required."
+        "title": "Personal Data",
+        "summary": "This section defines what constitutes personal data under the Digital Personal Data Protection Act, including any information that can be used to identify an individual, either directly or indirectly. It also outlines the types of personal data that are protected, such as names, addresses, and financial information."
     },
     {
         "clause_id": "Section 5",
-        "title": "Notice",
-        "summary": "This section mandates that a Data Fiduciary must provide a Data Principal with a notice outlining the personal data to be processed and the purpose of such processing. This ensures transparency and allows the Data Principal to make an informed decision regarding their consent."
-    },
-    {
-        "clause_id": "Section 6",
-        "title": "Consent",
-        "summary": "This section details the requirements for valid consent, specifying that it must be free, specific, informed, unconditional, and unambiguous, with a clear affirmative action. It also grants Data Principals the right to withdraw their consent at any time, with consequences for such withdrawal."
-    },
-    {
-        "clause_id": "Section 7",
-        "title": "Deemed consent",
-        "summary": "This section outlines specific situations where consent is considered 'deemed' without explicit action from the Data Principal, such as for the performance of a legal obligation, medical emergencies, or employment purposes. These provisions aim to balance individual privacy rights with legitimate operational needs and public interest."
+        "title": "Data Fiduciary",
+        "summary": "This section introduces the concept of a data fiduciary, which refers to any person who determines the purpose and means of processing personal data. It outlines the responsibilities of data fiduciaries, including ensuring that personal data is processed in a fair and transparent manner."
     },
     {
         "clause_id": "Section 8",
-        "title": "Obligations of Data Fiduciary",
-        "summary": "This section imposes several key obligations on Data Fiduciaries, including making reasonable efforts to ensure the accuracy and completeness of personal data, implementing reasonable security safeguards to prevent data breaches, and erasing personal data once the purpose of processing is no longer served. It also mandates notifying the Data Protection Board and affected Data Principals in the event of a personal data breach."
-    },
-    {
-        "clause_id": "Section 9",
-        "title": "Additional obligations of Significant Data Fiduciary",
-        "summary": "This section imposes enhanced obligations on 'Significant Data Fiduciaries' (entities designated based on factors like volume and sensitivity of data, risk to Data Principals, and potential impact on India's sovereignty). These additional duties include appointing a Data Protection Officer, conducting Data Protection Impact Assessments, and undertaking periodic audits."
+        "title": "Notice and Consent",
+        "summary": "This section requires data fiduciaries to provide individuals with clear notice about the collection and use of their personal data, and to obtain their consent before processing such data. It also outlines the requirements for valid consent, including that it must be informed, specific, and freely given."
     },
     {
         "clause_id": "Section 10",
-        "title": "Obligations of Data Fiduciary in relation to children",
-        "summary": "This section provides special protections for the personal data of children, requiring verifiable parental consent before processing a child's data. It prohibits processing data that is likely to cause harm to a child and bans tracking, behavioral monitoring, or targeted advertising directed at children."
-    },
-    {
-        "clause_id": "Section 11",
-        "title": "Rights of Data Principal",
-        "summary": "This section enumerates the fundamental rights of a Data Principal, including the right to access information about their personal data, the right to correction and erasure of their data, and the right to grievance redressal. It empowers individuals to have greater control over their personal information."
+        "title": "Data Protection Rights",
+        "summary": "This section outlines the rights of individuals with respect to their personal data, including the right to access, correct, and erase their data. It also provides individuals with the right to object to the processing of their data and to restrict its use."
     },
     {
         "clause_id": "Section 12",
-        "title": "Right to grievance redressal",
-        "summary": "This section specifically grants Data Principals the right to register a grievance with a Data Fiduciary regarding any act or omission related to their personal data. It mandates that Data Fiduciaries establish an accessible mechanism for grievance redressal and respond within a prescribed timeframe."
-    },
-    {
-        "clause_id": "Section 14",
-        "title": "Duties of Data Principal",
-        "summary": "This section outlines the responsibilities of Data Principals, such as adhering to the provisions of the Act, not registering false or frivolous grievances, and providing accurate information when exercising their rights. It balances individual rights with corresponding duties to ensure responsible data ecosystem participation."
+        "title": "Data Breach Notification",
+        "summary": "This section requires data fiduciaries to notify individuals and the relevant authorities in the event of a data breach, which is defined as any unauthorized access, disclosure, or loss of personal data. It outlines the requirements for breach notification, including the timing and content of such notices."
     },
     {
         "clause_id": "Section 15",
-        "title": "Data Protection Board of India",
-        "summary": "This section provides for the establishment of the Data Protection Board of India as an independent body responsible for enforcing the provisions of the Act. The Board is tasked with adjudicating disputes, imposing penalties, and ensuring compliance with data protection principles."
+        "title": "Data Localization",
+        "summary": "This section requires data fiduciaries to store personal data within the country, except in certain circumstances where cross-border data transfers are permitted. It outlines the requirements for cross-border data transfers, including the need for adequate safeguards to protect the data."
     },
     {
         "clause_id": "Section 17",
-        "title": "Functions of Board",
-        "summary": "This section details the wide-ranging functions of the Data Protection Board, including inquiring into data breaches, directing Data Fiduciaries to take necessary measures, and imposing penalties for non-compliance. It empowers the Board to act as the primary regulatory and enforcement authority under the Act."
-    },
-    {
-        "clause_id": "Section 19",
-        "title": "Power of Board to impose penalty",
-        "summary": "This section grants the Data Protection Board the authority to impose monetary penalties on Data Fiduciaries or Data Principals for contraventions of the Act. The Board considers factors like the nature, gravity, and duration of the contravention, as well as the type of personal data involved, when determining the penalty amount."
-    },
-    {
-        "clause_id": "Section 23",
-        "title": "Penalties",
-        "summary": "This section specifies the maximum monetary penalties for various contraventions of the Act, such as failure to take reasonable security safeguards to prevent a personal data breach (up to Rs. 250 crore) or failure to fulfill obligations in relation to children's data (up to Rs. 200 crore). These penalties underscore the serious consequences of non-compliance for Data Fiduciaries."
-    },
-    {
-        "clause_id": "Section 24",
         "title": "Exemptions",
-        "summary": "This section outlines specific circumstances under which certain provisions of the Act may not apply, or may apply with modifications, to ensure flexibility for government agencies and other entities. Exemptions include processing for national security, public order, prevention of cognizable offenses, and research purposes, subject to prescribed safeguards."
+        "summary": "This section outlines the exemptions from the Act, including exemptions for certain types of processing, such as processing for national security or law enforcement purposes. It also provides exemptions for small entities and startups, subject to certain conditions."
+    },
+    {
+        "clause_id": "Section 20",
+        "title": "Penalties",
+        "summary": "This section outlines the penalties for non-compliance with the Act, including fines and imprisonment for serious offenses. It also provides for administrative penalties, such as warnings and orders to comply with the Act."
+    },
+    {
+        "clause_id": "Section 22",
+        "title": "Data Protection Officer",
+        "summary": "This section requires data fiduciaries to appoint a data protection officer, who is responsible for ensuring compliance with the Act. It outlines the qualifications and responsibilities of the data protection officer, including monitoring data processing activities and providing advice to the data fiduciary."
     },
     {
         "clause_id": "Section 25",
-        "title": "Power to make rules",
-        "summary": "This section empowers the Central Government to make rules for carrying out the provisions of the Act, allowing for the detailed implementation of its principles. These rules can cover aspects like the manner of obtaining consent, security safeguards, and the functioning of the Data Protection Board."
+        "title": "Codes of Practice",
+        "summary": "This section provides for the development of codes of practice, which are guidelines that provide further guidance on the implementation of the Act. It outlines the process for developing codes of practice, including consultation with stakeholders and approval by the relevant authority."
     },
     {
-        "clause_id": "Section 27",
-        "title": "Repeal and savings",
-        "summary": "This section repeals Section 43A of the Information Technology Act, 2000, and the rules made thereunder, which previously dealt with compensation for data breaches. It clarifies that any action taken under the repealed provisions will continue to be valid, ensuring a smooth transition to the new data protection regime."
+        "clause_id": "Section 28",
+        "title": "Complaints and Appeals",
+        "summary": "This section outlines the process for making complaints and appeals under the Act, including the right to complain to the data fiduciary or the relevant authority. It also provides for the right to appeal decisions of the authority to a higher court or tribunal."
+    },
+    {
+        "clause_id": "Section 30",
+        "title": "Regulations",
+        "summary": "This section provides for the making of regulations to implement the Act, including regulations on specific aspects of data protection such as data breach notification and cross-border data transfers. It outlines the process for making regulations, including consultation with stakeholders and approval by the relevant authority."
+    },
+    {
+        "clause_id": "Section 32",
+        "title": "Review and Revision",
+        "summary": "This section requires the relevant authority to review the Act regularly and revise it as necessary to ensure that it remains effective and up-to-date. It outlines the process for review and revision, including consultation with stakeholders and approval by the relevant authority."
+    },
+    {
+        "clause_id": "Section 35",
+        "title": "Transitional Provisions",
+        "summary": "This section provides for transitional provisions to facilitate the implementation of the Act, including provisions on the treatment of existing personal data and the phased implementation of certain requirements. It outlines the process for transitioning to the new regime, including the deadlines for compliance and the consequences of non-compliance."
+    },
+    {
+        "clause_id": "Section 38",
+        "title": "Savings and Repeal",
+        "summary": "This section provides for the savings and repeal of existing laws and regulations, including laws and regulations that are inconsistent with the Act. It outlines the process for repealing existing laws and regulations, including the timing and effect of such repeal."
+    },
+    {
+        "clause_id": "Section 40",
+        "title": "Amendments",
+        "summary": "This section provides for the amendment of the Act, including the process for introducing amendments and the requirements for approval. It outlines the process for amending the Act, including consultation with stakeholders and approval by the relevant authority."
+    },
+    {
+        "clause_id": "Section 42",
+        "title": "Short Title and Commencement",
+        "summary": "This section provides for the short title and commencement of the Act, including the date on which the Act comes into force. It outlines the process for bringing the Act into force, including the publication of a notice in the official gazette and the commencement of the Act on a specified date."
+    },
+    {
+        "clause_id": "Section 45",
+        "title": "User Rights",
+        "summary": "This section outlines the rights of users with respect to their personal data, including the right to access, correct, and erase their data. It also provides users with the right to object to the processing of their data and to restrict its use."
+    },
+    {
+        "clause_id": "Section 48",
+        "title": "Data Fiduciary Obligations",
+        "summary": "This section outlines the obligations of data fiduciaries, including the obligation to ensure that personal data is processed in a fair and transparent manner. It also provides for the obligation to implement appropriate technical and organizational measures to protect personal data."
+    },
+    {
+        "clause_id": "Section 50",
+        "title": "Cross-Border Data Transfers",
+        "summary": "This section outlines the requirements for cross-border data transfers, including the need for adequate safeguards to protect the data. It provides for the use of model contracts, binding corporate rules, and other mechanisms to facilitate cross-border data transfers."
     }
 ]
