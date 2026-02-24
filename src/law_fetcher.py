@@ -23,7 +23,7 @@ def fetch_law_summary(law: str):
     1. EXTRACT the actual Section Numbers (e.g., "Section 3", "Section 17").
     2. Provide the specific Title of that section.
     3. For the summary, provide a detailed 2-sentence explanation of what that specific section governs.
-    4. Focus on the Top 20 most important sections (including Penalties, User Rights, Exemptions, and Data Fiduciary obligations).
+    4. Focus on the Top 30 most important sections (including Penalties, User Rights, Exemptions, and Data Fiduciary obligations).
     5. Output strictly as a JSON object with a single key "sections" containing a list of objects.
 
     Output Format:
@@ -66,6 +66,6 @@ def fetch_law_summary(law: str):
         return None
 
 if __name__ == "__main__":
-    summary = fetch_law_summary("Digital Personal Data Protection Act, 2023")
+    summary = fetch_law_summary("Draft Data Protection Bill")
     if summary:
         print(json.dumps(summary, indent=2))
