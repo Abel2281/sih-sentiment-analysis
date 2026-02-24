@@ -9,3 +9,4 @@ scikit-learn
 python-dotenv
 google-genai
 sentence-transformers
+groq
