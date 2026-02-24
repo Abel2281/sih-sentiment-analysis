@@ -23,15 +23,11 @@ def analyze_sentiment(csv_path):
     relevant_mask = df['Linked_Clause'] != "Irrelevant"
     relevant_comments = df.loc[relevant_mask, 'Comment'].tolist()
     
-    print(f"Total Comments: {len(df)}")
-    print(f"Relevant Comments to Process: {len(relevant_comments)}")
-    print(f"   (Skipping {len(df) - len(relevant_comments)} irrelevant rows...)")
-    
     if not relevant_comments:
         print("No relevant comments found. Exiting.")
         return df
 
-    print(f"Loading Sentiment Model ({MODEL_NAME})...")
+    print(f"Loading Sentiment Model ({MODEL_NAME})")
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
     model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
     
@@ -57,7 +53,7 @@ def analyze_sentiment(csv_path):
             batch_texts, 
             padding=True, 
             truncation=True, 
-            max_length=512, 
+            max_length=128, 
             return_tensors="pt"
         ).to(device)
         
@@ -112,13 +108,13 @@ def generate_final_report(df):
     print(summary.head())
 
 if __name__ == "__main__":
-    input_file = os.path.join("data", "processed", "test_linked_output.csv")
+    input_file = os.path.join("data", "processed", "linked_output.csv")
     
     final_df = analyze_sentiment(input_file)
     
     if final_df is not None:
         generate_final_report(final_df)
         
-        output_path = os.path.join("data", "processed", "final_analysis_result.csv")
+        output_path = os.path.join("data", "processed", "sentiment_analysis_result.csv")
         final_df.to_csv(output_path, index=False)
         print(f"\nSaved final analysis to {output_path}")
