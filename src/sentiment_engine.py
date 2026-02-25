@@ -10,14 +10,13 @@ from scipy.special import softmax
 MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment-latest"
 BATCH_SIZE = 32
 
-def analyze_sentiment(csv_path):
-    if not os.path.exists(csv_path):
-        print(f"Error: File not found at {csv_path}")
+def analyze_sentiment(df):
+    if not isinstance(df, pd.DataFrame):
+        print("Error: Input is not a pandas DataFrame.")
         return None
     
-    df = pd.read_csv(csv_path)
     if 'Linked_Clause' not in df.columns:
-        print("Error: CSV is missing 'Linked_Clause'. Run linker.py first!")
+        print("Error: DataFrame is missing 'Linked_Clause'. Run linker.py first!")
         return None
     
     relevant_mask = df['Linked_Clause'] != "Irrelevant"
@@ -107,14 +106,18 @@ def generate_final_report(df):
     print("\nDetailed Breakdown (Top 5):")
     print(summary.head())
 
-if __name__ == "__main__":
-    input_file = os.path.join("data", "processed", "linked_output.csv")
-    
-    final_df = analyze_sentiment(input_file)
-    
-    if final_df is not None:
-        generate_final_report(final_df)
-        
-        output_path = os.path.join("data", "processed", "sentiment_analysis_result.csv")
-        final_df.to_csv(output_path, index=False)
-        print(f"\nSaved final analysis to {output_path}")
+# def store_sentiment_results():
+#     input_file = os.path.join("data", "processed", "linked_dataset.csv")
+#     final_df = analyze_sentiment(input_file)
+#     if final_df is not None:
+#         generate_final_report(final_df)
+
+#     output_path = os.path.join("data", "processed", "sentiment_analysis_result.csv")
+#     if final_df is not None:
+#         final_df.to_csv(output_path, index=False)
+#         print(f"Final sentiment analysis saved to: {output_path}")
+#     else:
+#         print("Error: Could not generate sentiment analysis results.")
+
+# if __name__ == "__main__":
+#     store_sentiment_results()
