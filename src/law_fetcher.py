@@ -64,8 +64,18 @@ def fetch_law_summary(law: str):
     except Exception as e:
         print(f"Error talking to Groq: {e}")
         return None
+    
+def store_law_summary(law_name):
+    law_data = fetch_law_summary(law_name)
+    if not law_data:    
+        print("No law data to save.")
+        return
+    save_path = os.path.join("data", "processed" , "law_context.json")
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    with open(save_path, "w") as f:
+        json.dump(law_data, f, indent=4)
 
 if __name__ == "__main__":
-    summary = fetch_law_summary("Draft Data Protection Bill")
-    if summary:
-        print(json.dumps(summary, indent=2))
+    law_name = input("Enter the name of the law you want to fetch: ")
+    save_path = os.path.join("data", "processed", "law_context.json")
+    store_law_summary(law_name)

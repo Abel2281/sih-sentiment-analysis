@@ -58,21 +58,20 @@ def link_comments_to_law(input_df):
 
     return input_df
 
+# def store_linked_results():
+#     csv_path = os.path.join("data", "raw", "datasetv1.csv")
+#     output_path = os.path.join("data", "processed", "linked_dataset.csv")
+#     if os.path.exists(csv_path):
+#         print(f"Found CSV at: {csv_path}")
+#         input_df = pd.read_csv(csv_path)
+#         enriched_df = link_comments_to_law(input_df)
+#         if enriched_df is not None:
+#             enriched_df.to_csv(output_path, index=False)
+#             print(f"Linked dataset saved to: {output_path}")
+#         else:
+#             print("Error: Could not link comments to law.")
+#     else:
+#         print(f"Error: CSV file not found at {csv_path}")
 
-if __name__ == "__main__":
-    csv_path = os.path.join("data", "raw", "datasetv1.csv")
-    
-    if os.path.exists(csv_path):
-        print(f"Found CSV at: {csv_path}")
-        input_df = pd.read_csv(csv_path)
-        enriched_df = link_comments_to_law(input_df)
-        
-        if enriched_df is not None:
-            print("\nSUCCESS! Preview of results:")
-            print(enriched_df[['Comment', 'Linked_Clause', 'Match_Confidence']].head())
-            
-            enriched_df.to_csv("data/processed/linked_output.csv", index=False)
-            print("Saved result to data/processed/linked_output.csv")
-            
-    else:
-        print(f"Test CSV not found at {csv_path}")
+# if __name__ == "__main__":  
+#     store_linked_results()

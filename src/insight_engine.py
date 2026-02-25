@@ -47,6 +47,8 @@ def get_groq_insight(comments, law_name, section_name, sentiment_type):
             temperature=0.2,
             max_tokens=100,
         )
+        if not response.choices or not response.choices[0].message.content:
+            return "Could not generate insight due to empty response."
         return response.choices[0].message.content.strip()
     except Exception as e:
         return f"Could not generate insight due to API Error: {e}"
@@ -112,7 +114,10 @@ def analyze_insights(csv_path, law_name):
         print(f"   • Volume: {count} positive comments")
         print(f"   • Insight: {insight}")
 
-if __name__ == "__main__":
+def run_insight_engine(law_name):
     input_file = os.path.join("data", "processed", "sentiment_analysis_result.csv")
-    TEST_LAW_NAME = "Personal Data Protection Bill, 2019"
-    analyze_insights(input_file, TEST_LAW_NAME)
+    analyze_insights(input_file, law_name)
+
+if __name__ == "__main__":
+    law_name = input("Enter the name of the law for insight generation: ")
+    run_insight_engine(law_name)
