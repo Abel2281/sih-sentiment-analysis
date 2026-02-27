@@ -23,8 +23,15 @@ def fetch_law_summary(law: str):
     1. EXTRACT the actual Section Numbers (e.g., "Section 3", "Section 17").
     2. Provide the specific Title of that section.
     3. For the summary, provide a detailed 2-sentence explanation of what that specific section governs.
-    4. Focus on the Top 30 most important sections (including Penalties, User Rights, Exemptions, and Data Fiduciary obligations).
-    5. Output strictly as a JSON object with a single key "sections" containing a list of objects.
+    4. You MUST explicitly include and summarize these exact sections: 
+       - Section 11 (Consent Framework)
+       - Section 20 (Right to be Forgotten)
+       - Section 33 (Data Localization)
+       - Section 35 (Government Exemptions)
+       - Section 41 (Data Protection Authority)
+       - Section 57 (Penalties)
+    5. You can include up to 15 other important sections, but the 6 listed above are mandatory.
+    6. Output strictly as a JSON object with a single key "sections" containing a list of objects.
 
     Output Format:
     {{
