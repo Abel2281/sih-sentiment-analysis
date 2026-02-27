@@ -3,9 +3,12 @@ import os
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 import numpy as np
+import streamlit as st
 
-linker_model = SentenceTransformer('all-MiniLM-L6-v2')
-print("Linker Model Loaded!")
+@st.cache_resource
+def get_linker_model():
+    print("Loading Linker Model into RAM...")
+    return SentenceTransformer('all-MiniLM-L6-v2')
 
 def load_law_context():
     path = os.path.join("data", "processed", "law_context.json")
@@ -20,6 +23,8 @@ def link_comments_to_law(input_df):
     Input: A Pandas DataFrame containing a 'Comment' column.
     Output: The same DataFrame with new columns added.
     """
+    linker_model = get_linker_model()
+
     law_clauses = load_law_context()
     if not law_clauses: 
         return None
