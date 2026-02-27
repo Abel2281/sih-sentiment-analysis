@@ -2,19 +2,23 @@ import pandas as pd
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from tqdm import tqdm
-import os
+import streamlit as st
 import numpy as np
 from scipy.special import softmax
 
 
 MODEL_NAME = "cardiffnlp/twitter-roberta-base-sentiment-latest"
 BATCH_SIZE = 32
-print(f"Loading Sentiment Model ({MODEL_NAME})")
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)   
-device = torch.device("cpu")
-model.to(device)
-model.eval() # Disable training mode for speed
+
+@st.cache_resource
+def get_sentiment_model():
+    print(f"Loading Sentiment Model ({MODEL_NAME}) into RAM...")
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+    model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
+    device = torch.device("cpu")
+    model.to(device)
+    model.eval()
+    return tokenizer, model, device
 
 def analyze_sentiment(df):
     if not isinstance(df, pd.DataFrame):
@@ -34,6 +38,8 @@ def analyze_sentiment(df):
     
     df['Sentiment_Label'] = "N/A"
     df['Sentiment_Score'] = 0.0
+
+    tokenizer, model, device = get_sentiment_model()
 
     id2label = model.config.id2label 
     processed_labels = []
