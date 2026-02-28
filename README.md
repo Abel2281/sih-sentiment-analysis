@@ -11,8 +11,6 @@ PolicyIQ is an enterprise-grade NLP dashboard designed to ingest raw public comm
 
 ## 📸 Dashboard Preview
 
-> **Note:** Add your screenshots to a folder named `assets/` and update the links below.
-
 ### 1. The Input Interface
 *(Upload a screenshot of the clean, dark-mode landing page here)*
 ![Input Screen](assets/FirstPage.png)
