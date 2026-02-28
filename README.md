@@ -13,7 +13,7 @@ PolicyIQ is an enterprise-grade NLP dashboard designed to ingest raw public comm
 
 ### 1. The Input Interface
 *(Upload a screenshot of the clean, dark-mode landing page here)*
-![Input Screen](assets/FirstPage.png)
+![Input Screen](assets/UploadPage.png)
 
 ### 2. Dynamic NLP Pipeline
 *(Upload a screenshot of the spinning loader and 01->04 progress tracker)*
